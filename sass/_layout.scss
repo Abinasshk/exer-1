@@ -16,7 +16,7 @@ body {
 
 body::after {
     content : "";
-    clip-path: polygon(0 0, 80% 0 , 50% 100% , 0 100%);
+    clip-path: polygon(0 0, 60% 0 , 30% 100% , 0 100%);
     //background-color: rgb(43, 71, 233);
     background-color: couleur(primaire);
     position: absolute;
@@ -54,7 +54,7 @@ body::after {
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background-color: blue;
+            background-color: black;
         }
     }
  
@@ -73,7 +73,7 @@ p {
 .bloc {
     border : 1px solid #666;
     background-color:transparent;
-    color :wheat;
+    color :red;
     font-size: 3rem;
     margin-left : 0;
     display : flex;
@@ -114,15 +114,23 @@ p {
 
 .entete{
     grid-area: entete;
-
+    display: flex;
+    flex-direction: row;
 }
-
 .menu{
     grid-area: menu;
-
 }
 .annonce1{
     grid-area: annonce1;
+}
+.principal{
+    grid-area: principal;
+}
+.pied-page{
+    grid-area: pied-page;
+}
+
+.annonce1{
     background-color: #efebc5;
     color: #5e6e81;
     border-radius: 10px;
@@ -136,24 +144,10 @@ p {
         }
     }
 
-.annonce2{
-    padding: 42px;
-    margin: 20px;
-    background-color: #efebc5;
-    color: #1c2127;
-    grid-area: annonce2;
-    section {
-        display : flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
 
-}
+
 .principal{
     display : grid;
     place-items: center;
-    grid-area: principal;
 }
-.pied-page{
-    grid-area: pied-page;
-}
+
